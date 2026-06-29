@@ -1,3 +1,6 @@
+
+<div dir="rtl">
+
 # مقایسه فنی Ethereum و Solana در توسعه Smart Contract (قرارداد هوشمند)
 
 انتقال از **Ethereum (اتریوم)** به **Solana (سولانا)** تنها به یادگیری یک سینتکس جدید محدود نمی‌شود؛ بلکه نیازمند یک تغییر اساسی در **مدل ذهنی معماری بلاک‌چین** است. هرچند هر دو اکوسیستم امکان ساخت **Decentralized Application (برنامه غیرمتمرکز)** را فراهم می‌کنند، اما مکانیزم‌های پایه‌ای آن‌ها در زمینه **ذخیره‌سازی (Storage)**، **اجرا (Execution)** و **استقرار (Deployment)** تفاوت‌های قابل‌توجهی دارند.
@@ -277,3 +280,6 @@ App = Programs (Code) + Accounts (State)
 - **Upgradability (ارتقا)**
   - Ethereum: Immutable (نیازمند Proxy)
   - Solana: Upgradable به‌صورت پیش‌فرض
+
+
+</div>

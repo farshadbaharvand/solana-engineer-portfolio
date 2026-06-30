@@ -230,3 +230,29 @@ Account {
 
 
 </div>
+
+
+<div dir="rtl">
+
+# خلاصه ساختار Solana Accounts
+
+| مفهوم | توضیح | مثال / نکته مهم |
+|---|---|---|
+| تعریف Account | واحد اصلی ذخیره داده در شبکه Solana | تمام داده‌ها در Accounts نگهداری می‌شوند |
+| Lamports | کوچک‌ترین واحد SOL که موجودی حساب را نشان می‌دهد | 1 SOL = 1,000,000,000 Lamports |
+| Rent | هزینه استفاده از فضای ذخیره روی Validatorها | باید حداقل Lamports برای نگهداری داده وجود داشته باشد |
+| Rent‑Exempt | حالتی که حساب برای حدود دو سال هزینه ذخیره را پوشش دهد | حالت استاندارد در توسعه سولانا |
+| Data | آرایه بایت (Vec<u8>) برای ذخیره اطلاعات | می‌تواند داده برنامه یا بایت‌کد باشد |
+| Storage Accounts | حساب‌هایی برای نگهداری وضعیت (State) | مانند موجودی توکن یا پروفایل کاربر |
+| Program Accounts | حساب‌هایی که کد اجرایی برنامه را نگه می‌دارند | Smart Contractها |
+| Separation Model | جداسازی کامل Code و State در سولانا | Program = Logic / Account = Data |
+| Owner | برنامه‌ای که مالک حساب است و اجازه تغییر داده دارد | فقط Owner می‌تواند data را تغییر دهد |
+| Security Rule | قوانین مالکیت برای جلوگیری از تغییر یا برداشت غیرمجاز | وابسته به Program Owner |
+| Executable | مشخص می‌کند حساب یک برنامه اجرایی است یا داده | true = Program / false = Data |
+| User Wallet Example | کیف پول کاربر با lamports و بدون داده | owner: System Program |
+| Program Deployment Example | حسابی که بایت‌کد قرارداد را نگه می‌دارد | executable: true |
+| Program State Example | حسابی که داده‌های یک برنامه را ذخیره می‌کند | owner: Program ID |
+| Account Hierarchy | ساختار مدیریتی حساب‌ها در سولانا | System Program → Programs → Data Accounts |
+
+</div>
+

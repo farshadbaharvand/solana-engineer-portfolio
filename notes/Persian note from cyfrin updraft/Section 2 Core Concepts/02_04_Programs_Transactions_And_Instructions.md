@@ -284,3 +284,29 @@ count = 0
 
 
 </div>
+
+
+
+<div dir="rtl">
+
+# خلاصه معماری Solana Programs
+
+| مفهوم | توضیح | نکته مهم / مثال |
+|---|---|---|
+| Program در سولانا | یک **Executable Stateless Account** است | برنامه فقط منطق اجرا را نگه می‌دارد |
+| Executable | فیلد `executable = true` نشان می‌دهد حساب شامل کد اجرایی است | Runtime تشخیص می‌دهد که کد باید اجرا شود |
+| Stateless Architecture | برنامه‌ها هیچ **State یا داده کاربری** ذخیره نمی‌کنند | داده در **State Accounts** جداگانه ذخیره می‌شود |
+| Instruction (ix) | یک فراخوانی تابع به یک Program | مشخص می‌کند چه منطقی اجرا شود |
+| Transaction (tx) | بسته‌ای از یک یا چند Instruction | واحد اتمی ارسال به شبکه |
+| Atomicity | اگر یک Instruction شکست بخورد کل Transaction شکست می‌خورد | تضمین یکپارچگی عملیات |
+| Accounts در Transaction | لیست تمام حساب‌های درگیر در تراکنش | باید قبل از اجرا اعلام شوند |
+| Parallel Execution | Runtime با بررسی Accountها تراکنش‌های مستقل را همزمان اجرا می‌کند | دلیل توان پردازشی بالای سولانا |
+| Sealevel Runtime | موتور اجرای سولانا برای پردازش موازی تراکنش‌ها | وابستگی‌ها را از روی Accountها تشخیص می‌دهد |
+| State Storage | داده‌ها در **State Accounts** ذخیره می‌شوند نه در Program | مثال: Counter Account |
+| Cross‑Program Invocation (CPI) | برنامه می‌تواند برنامه دیگری را فراخوانی کند | مثال: Counter Program → System Program |
+| System Program | تنها برنامه‌ای که می‌تواند Account جدید ایجاد کند | برای ایجاد State Account استفاده می‌شود |
+| Rent | هزینه ذخیره داده روی Validatorها | با SOL پرداخت می‌شود |
+| Ownership | مالک حساب تعیین می‌کند چه برنامه‌ای می‌تواند داده را تغییر دهد | امنیت داده‌ها را تضمین می‌کند |
+| Example Flow | Alice → ارسال Transaction → اجرای Program → ایجاد State Account → ذخیره داده | مثال Counter Program با مقدار `count = 0` |
+
+</div>

@@ -153,7 +153,7 @@ Transaction B accounts:
 
 ## 1. Submission (ارسال تراکنش)
 
-**Alice** یک تراکنش ایجاد می‌کند که شامل دستور زیر است:
+آلیس (Alice) یک تراکنش ایجاد می‌کند که شامل دستور زیر است:
 
 ```
 initialize counter state

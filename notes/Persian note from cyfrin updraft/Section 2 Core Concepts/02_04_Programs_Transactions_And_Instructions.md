@@ -153,7 +153,7 @@ Transaction B accounts:
 
 ## 1. Submission (ارسال تراکنش)
 
-آلیس (Alice) یک تراکنش ایجاد می‌کند که شامل دستور زیر است:
+آلیس **Alice** یک تراکنش ایجاد می‌کند که شامل دستور زیر است:
 
 ```
 initialize counter state
@@ -208,9 +208,7 @@ ix = init counter state
 
 در این مرحله، **Counter Program** یک:
 
-**Cross‑Program Invocation (CPI) — فراخوانی بین برنامه‌ای**
-
-انجام می‌دهد.
+فراخوانی بین برنامه‌ای **Cross‑Program Invocation (CPI)** انجام می‌دهد.
 
 این یعنی برنامه یک **Instruction جدید** برای **System Program** ارسال می‌کند.
 

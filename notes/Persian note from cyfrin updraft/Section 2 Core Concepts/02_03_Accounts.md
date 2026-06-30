@@ -214,9 +214,17 @@ Account {
 
 # Summary of Account Hierarchy (خلاصه سلسله‌مراتب حساب‌ها)
 
-- **System Program** → مدیریت **User Wallets (کیف پول کاربران)**
-- **BPF Loader** → مدیریت **Custom Programs (برنامه‌های سفارشی)**
-- **Custom Programs** → مدیریت **Data Accounts (حساب‌های داده)**
+- **System Program**
+
+مدیریت **User Wallets (کیف پول کاربران)**
+
+- **BPF Loader**
+
+مدیریت **Custom Programs (برنامه‌های سفارشی)**
+
+- **Custom Programs**
+
+مدیریت **Data Accounts (حساب‌های داده)**
 
 درک این ساختار نشان می‌دهد چگونه **Solana** می‌تواند همزمان **Throughput بالا** و **امنیت قوی** برای مدیریت داده‌ها و دارایی‌ها فراهم کند.
 

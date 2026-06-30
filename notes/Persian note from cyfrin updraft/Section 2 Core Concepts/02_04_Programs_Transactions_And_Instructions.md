@@ -169,7 +169,7 @@ initialize counter state
 
 ## 2. Program Invocation (فراخوانی برنامه)
 
-**Solana Runtime** تراکنش را دریافت می‌کند.
+سولانا رانتایم **Solana Runtime** تراکنش را دریافت می‌کند.
 
 سپس:
 
@@ -184,7 +184,7 @@ ix = init counter state
 
 ## 3. Creating the State Account (ایجاد حساب وضعیت)
 
-**Counter Program** شروع به اجرای منطق خود می‌کند.
+برنامه شمارنده **Counter Program** شروع به اجرای منطق خود می‌کند.
 
 این برنامه باید مقدار **0** را ذخیره کند.
 

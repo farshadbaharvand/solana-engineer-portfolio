@@ -283,3 +283,29 @@ App = Programs (Code) + Accounts (State)
 
 
 </div>
+
+
+<div dir="rtl">
+
+# خلاصه مقایسه Ethereum و Solana
+
+| موضوع | Ethereum | Solana |
+|---|---|---|
+| زبان برنامه‌نویسی | Solidity, Vyper | Rust, Python |
+| فرمت بایت‌کد | EVM Bytecode | SBF (Solana Bytecode Format) |
+| مدل معماری | Contract = Code + State | Programs + Accounts |
+| ساختار داده و کد | کد و داده در یک قرارداد | کد و داده جدا از هم |
+| مدل اجرا | Sequential (ترتیبی) | Parallel (موازی) |
+| نوع پردازش | Single-Threaded | Multi-Threaded |
+| مقیاس‌پذیری | محدودتر به دلیل اجرای ترتیبی | بسیار بالا به دلیل اجرای موازی |
+| مسئولیت توسعه‌دهنده | کمتر در مدیریت وابستگی | نیاز به تعریف Accountهای درگیر |
+| استقرار قرارداد | پرداخت Gas Fee | پرداخت Rent و قفل شدن SOL |
+| هزینه نگهداری | معمولاً ندارد | نیازمند نگهداری Rent |
+| بازگشت هزینه | ندارد | با حذف Account یا Program بازگردانده می‌شود |
+| قابلیت ارتقا | Immutable به‌صورت پیش‌فرض | Upgradable به‌صورت پیش‌فرض |
+| روش ارتقا | Proxy Pattern | Upgrade Authority |
+| ابزار توسعه رایج | Hardhat, Foundry | Anchor Framework |
+| مزیت اصلی | سادگی و امنیت | سرعت و کارایی بالا |
+| چالش اصلی | کارمزد و مقیاس‌پذیری | پیچیدگی معماری و مدیریت Account |
+
+</div>
